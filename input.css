@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navhover {
+  @apply h-full items-end flex hover:text-white hover:bg-gradient-to-b from-slate-200 to-blue-700 duration-200;
+}
+.burgerhover {
+  @apply w-full items-start flex hover:text-white hover:bg-gradient-to-l from-slate-200 to-blue-700 duration-200 rounded-lg;
+}
+.card-css {
+  @apply max-w-32 max-h-fit p-3 flex flex-col items-center justify-center shadow-3xl rounded-2xl;
+}
+.card-css2 {
+  @apply w-52 h-fit p-3 flex flex-col items-center justify-center shadow-3xl rounded-2xl;
+}
+
+.btnHover {
+  @apply bg-orange-700 px-2 py-1 rounded-full hover:bg-orange-500 text-white;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #cbd5e1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8d61cc;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body class="h-full">
+    <div class="container w-full px-8 bg-white">
+      <!-- navbar -->
+      <nav class="flex justify-between max-h-28">
+        <div class="logo">
+          <img src="../assets/logo.jpg" alt="jjj" class="max-w-40" />
+        </div>
+
+        <div class="flex">
+          <div
+            class="items hidden lg:flex gap-6 justify-center items-end text-blue-900 font-bold"
+          >
+            <a href="#services" class="px-3 navhover">Services</a>
+            <a href="#digital-assets" class="px-3 navhover">Digital Assets</a>
+            <a href="#blog" class="px-3 navhover">Blog</a>
+            <a href="#about-us" class="px-3 navhover">About Us</a>
+            <a href="#careers" class="px-3 navhover">Careers</a>
+            <a href="#contact-us" class="px-3 navhover">Contact Us</a>
+          </div>
+
+          <div class="flex items-end">
+            <button
+              class="p-3 lg:hidden flex justify-end"
+              onclick="handleMenu()"
+            >
+              <i class="fa-solid fa-bars text-gray-700"></i>
+            </button>
+          </div>
+
+          <!-- hamburger -->
+
+          <div
+            id="nav-dialog"
+            class="hidden fixed z-10 lg:hidden bg-white inset-0 pl-8 pr-8"
+          >
+            <div class="flex justify-between">
+              <div class="logo">
+                <img src="../assets/logo.jpg" alt="jjj" class="max-w-40" />
+              </div>
+
+              <button class="p-3 lg:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-x text-gray-700"></i>
+              </button>
+            </div>
+            <div class="">
+              <a href="#services" class="m-3 p-3 block burgerhover">Services</a>
+              <a href="#digital-assets" class="m-3 p-3 block burgerhover"
+                >Digital Assets</a
+              >
+              <a href="#blog" class="m-3 p-3 block burgerhover">Blog</a>
+              <a href="#about-us" class="m-3 p-3 block burgerhover">About Us</a>
+              <a href="#careers" class="m-3 p-3 block burgerhover">Careers</a>
+              <a href="#contact-us" class="m-3 p-3 block burgerhover"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+
+      <div class="hero lg:flex mt-16">
+        <div
+          class="text-hero flex flex-col justify-center items-center lg:items-start w-fit lg:w-1/2"
+        >
+          <div>
+            <div class="">
+              <h2 class="text-2xl font-bold text-blue-800">
+                Lorem ipsum dolor,<br />
+                sit amet consectetur
+                <span class="text-4xl text-pink-500">Adipisifgf. </span>
+              </h2>
+            </div>
+            <div class="font-semibold mt-4">
+              <h2 class="text-xl text-pink-800">
+                Successful Projects in last
+                <span class="text-4xl text-pink-500 font-bold"> 180 </span> Days
+              </h2>
+            </div>
+          </div>
+
+          <!-- cards  -->
+
+          <div class="gap-3 lg:flex lg:justify-center w-fit">
+            <div class="cards my-6">
+              <div class="card-css">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-600">
+                    Project 1
+                  </h2>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid, ,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 p-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- cards  -->
+
+            <div class="cards my-6">
+              <div class="card-css">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-600">
+                    Project 1
+                  </h2>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 p-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- cards  -->
+
+            <div class="cards my-6">
+              <div class="card-css">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-600">
+                    Project 1
+                  </h2>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 p-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- cards  -->
+
+            <div class="cards my-6">
+              <div class="card-css">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-600">
+                    Project 1
+                  </h2>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 p-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-hero lg:w-1/2">
+          <img
+            src="../assets/meeting.jpg"
+            alt=""
+            class="h-full w-full rounded-lg shadow-3xl"
+          />
+        </div>
+      </div>
+
+      <!-- companys -->
+
+      <div
+        class="mt-12 pt-4 pb-4 mb-4 bg-purple-700 text-white text-2xl rounded-lg"
+      >
+        <div class="lg:flex items-center justify-center p-3">
+          Our Technical Compabilities
+        </div>
+
+        <div
+          class="flex flex-col justify-center items-center gap-8 lg:flex-row"
+        >
+          <div class="w-[90px]"><img src="../assets/ibm.png" alt="" /></div>
+          <div class="w-[90px]"><img src="../assets/amazom.png" alt="" /></div>
+          <div class="w-[90px]"><img src="../assets/micro.png" alt="" /></div>
+          <div class="w-[90px]"><img src="../assets/ibm.png" alt="" /></div>
+          <div class="w-[90px]"><img src="../assets/micro.png" alt="" /></div>
+          <div class="w-[90px]"><img src="../assets/amazom.png" alt="" /></div>
+          <div class="w-[90px]"><img src="../assets/face.png" alt="" /></div>
+        </div>
+      </div>
+      <!-- Projects -->
+
+      <div class="py-10">
+        <div class="text-3xl text-purple-900 flex justify-center items-center">
+          Our <span class="text-pink-500 font-bold">Key</span> Project
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper my-6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-12 lg:w-1/2 lg:flex gap-8">
+              <div class="left">
+                <div class="">
+                  <h1 class="text-pink-600 text-3xl">POS Project</h1>
+                  <p class="text-purple-900 textxl my-3 font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, modi.
+                  </p>
+                  <p class="my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam magnam, repellendus facere voluptatibus repudiandae
+                    doloribus quos hic ullam optio voluptates nulla modi dolores
+                    qui rerum minus dignissimos aspernatur impedit ipsum?Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+                    consectetur.
+                  </p>
+                  <button
+                    class="btnHover"
+                    class="p-2 text-white rounded-full my-6 bg-orange-800"
+                  >
+                    Mail Me Case Study
+                  </button>
+                </div>
+              </div>
+              <div class="right">
+                <div class="hidden lg:flex">
+                  <img
+                    class="max-w-full rounded-2xl"
+                    src="../assets/project.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide px-12 lg:w-1/2 lg:flex gap-8">
+              <div class="left">
+                <div class="">
+                  <h1 class="text-pink-600 text-3xl">POS Project</h1>
+                  <p class="text-purple-900 textxl my-3 font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, modi.
+                  </p>
+                  <p class="my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam magnam, repellendus facere voluptatibus repudiandae
+                    doloribus quos hic ullam optio voluptates nulla modi dolores
+                    qui rerum minus dignissimos aspernatur impedit ipsum?Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+                    consectetur.
+                  </p>
+                  <button
+                    class="btnHover"
+                    class="p-2 text-white rounded-full my-6 bg-orange-800"
+                  >
+                    Mail Me Case Study
+                  </button>
+                </div>
+              </div>
+              <div class="right">
+                <div class="hidden lg:flex">
+                  <img
+                    class="max-w-full rounded-2xl"
+                    src="../assets/project.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide px-12 lg:w-1/2 lg:flex gap-8">
+              <div class="left">
+                <div class="">
+                  <h1 class="text-pink-600 text-3xl">POS Project</h1>
+                  <p class="text-purple-900 textxl my-3 font-semibold">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Obcaecati, modi.
+                  </p>
+                  <p class="my-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam magnam, repellendus facere voluptatibus repudiandae
+                    doloribus quos hic ullam optio voluptates nulla modi dolores
+                    qui rerum minus dignissimos aspernatur impedit ipsum?Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+                    consectetur.
+                  </p>
+                  <button
+                    class="btnHover"
+                    class="p-2 text-white rounded-full my-6 bg-orange-800"
+                  >
+                    Mail Me Case Study
+                  </button>
+                </div>
+              </div>
+              <div class="right">
+                <div class="hidden lg:flex">
+                  <img
+                    class="max-w-full rounded-2xl"
+                    src="../assets/project.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+      </div>
+
+      <!-- Meet Our Team -->
+
+      <div class="bg-slate-100 h-fit flex flex-col justify-center">
+        <div class="flex justify-center pt-4">
+          <h1 class="text-3xl text-purple-900">
+            Meet Our <span class="text-pink-600">Team</span>
+          </h1>
+        </div>
+        <div
+          class="lg:flex lg:justify-between p-7 h-fit lg:max-h-[500px] gap-5"
+        >
+          <div class="left lg:w-1/2 h-fit">
+            <div class="lg:w-fit mt-">
+              <video controls>
+                <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+              </video>
+            </div>
+          </div>
+          <div
+            class="right lg:w-1/2 h-96 overflow-y-scroll pt-5 lg:p-0 flex flex-col gap-5"
+          >
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+            <div class="pl- lg:flex gap-5">
+              <div class="w-1/2">
+                <video controls class="">
+                  <source src="../assets/4990247-hd_1920_1080_30fps.mp4" />
+                </video>
+              </div>
+              <div class="lg:w-4/12">
+                <p class="font-semibold text-orange-600 text-lg">Video Titel</p>
+                <p class="text-purple-800">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, est.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mb-10">
+          <button
+            class="btnHover bg-orange-700 py-2 px-5 text-white rounded-full"
+          >
+            Contact us
+          </button>
+        </div>
+      </div>
+
+      <!-- Milliennium Techpluse -->
+      <div class="p-10">
+        <div
+          class="lg:flex justify-center text-3xl text-purple-800 tracking-wide"
+        >
+          <h1>Millennium</h1>
+          <span class="text-pink-500 font-bold"> TechPluse</span>
+        </div>
+
+        <!-- cards -->
+        <div class="lg:flex justify-center gap-7 mt-5">
+          <div class="flex justify-center">
+            <div class="cards my-6">
+              <div class="card-css2">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-900">
+                    Lorem ipsum dolor sit amet.
+                  </h2>
+                  <p class="text-sm py-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Est, labore? lorem10 ,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 px-5 py-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="cards my-6">
+              <div class="card-css2">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-900">
+                    Lorem ipsum dolor sit amet.
+                  </h2>
+                  <p class="text-sm py-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Est, labore? lorem10 ,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 px-5 py-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <div class="cards my-6">
+              <div class="card-css2">
+                <div><i class="fa-solid fa-desktop text-3xl"></i></div>
+                <div class="">
+                  <h2 class="text-lg font-semibold m-2 text-purple-900">
+                    Lorem ipsum dolor sit amet.
+                  </h2>
+                  <p class="text-sm py-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum suscipit ex aliquid, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Est, labore? lorem10 ,
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btnHover"
+                    class="bg-green-700 px-5 py-2 rounded-full text-sm text-white mt-3"
+                  >
+                    Case Study
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- service deliver -->
+      <div class="">
+        <div
+          class="lg:flex justify-center text-3xl text-purple-800 tracking-wide"
+        >
+          <span class="text-pink-500 font-bold">Services </span>
+          <h1>Delivered From</h1>
+        </div>
+        <div class="flex justify-center m-5 p-5">
+          <img src="../assets/map.avif" alt="" class="w-screen h-96" />
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="w-full bg-purple-700 lg:flex p-7 gap-12">
+      <!-- details -->
+      <div class="lg:flex justify-between text-white w-1/2">
+        <div class="">
+          <p class="text-orange-400 font-semibold pb-3">Content</p>
+          <div class="">
+            <p>About</p>
+            <p>Service</p>
+            <p>Career</p>
+          </div>
+        </div>
+        <div class="">
+          <p class="text-orange-400 font-semibold pb-3">informations</p>
+          <div>
+            <p>Work We do</p>
+            <p>Success Stories</p>
+            <p>Digital Transformation</p>
+            <p>Videos</p>
+            <p>Blogs</p>
+          </div>
+        </div>
+        <div class="">
+          <p class="text-orange-400 font-semibold pb-3">Support</p>
+          <div class="">
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="font-bold pb-4 text-orange-400">Social Media</p>
+        <div class="flex gap-3 text-white text-lg">
+          <button><i class="fa-brands fa-facebook"></i></button>
+          <button><i class="fa-brands fa-twitter"></i></button
+          ><button><i class="fa-brands fa-linkedin"></i></button>
+        </div>
+      </div>
+    </footer>
+    <footer class="flex justify-center bg-purple-900 text-white">
+      <div class="">&copy; 2023, Millenium IMS PVT LTD.</div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="app.js"></script>
+</html>
